@@ -4,3 +4,4 @@ WORKDIR /app
 EXPOSE 4000
 RUN ["bundle"]
 RUN ["mkdir", ".jekyll-cache", "_site", "&&", "bundle", "exec", "jekyll", "b"]
+CMD ["bundle", "exec", "jekyll", "s"]
