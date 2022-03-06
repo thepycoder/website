@@ -7,4 +7,5 @@ RUN touch Gemfile.lock
 RUN chmod a+w Gemfile.lock
 RUN gem install bundler
 RUN bundle install
+RUN mkdir _site .jekyll-cache
 RUN jekyll build
