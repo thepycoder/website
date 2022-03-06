@@ -16,7 +16,7 @@ Jekyll was a piece of shit to get deployed correctly, so allow me to make it eas
 ## Jekyll Dockerfile
 This is where all the frustration comes from. Not only is the last jekyll docker image from 8 months ago at the time of writing, there's plenty of annoyances in building the Dockerfile.
 
-```docker
+```yaml
 # Pick a previous version, because 4+ had issues
 FROM jekyll/jekyll:3.8.6
 # The docker images uses a normal user instead of root (which is good), but that also means you can't just put everything in /app because the permissions are all fucked up then. Took me a while this one.
